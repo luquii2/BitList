@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitles crypto exchange</title>
+    <meta
+      name="description"
+      content="The Bitles app is a comprehensive solution for trading digital assets. Buy and sell cryptocurrencies quickly and openly, comfortably and safely from anywhere in the world."
+    />
+    <meta name="keywords" content="Bitles, crypto, crypto exchange, bitcoin" />
+    <meta propety="og:type" content="website" />
+    <meta propety="og:url" content="https://bitles.com" />
+    <meta propety="og:title" content="Bitles crypto exchange" />
+    <meta
+      propety="og:description"
+      content="The Bitles app is a comprehensive solution for trading digital assets. Buy and sell cryptocurrencies quickly and openly, comfortably and safely from anywhere in the world."
+    />
+    <meta propety="og:image" content="./assets/logo.svg" />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="popup"></div>
+      <div class="container">
+        <div class="header__container">
+          <div class="header__container-block">
+            <a href="#" class="header__logo">
+              <img src="./assets/logo.svg" alt="" />
+            </a>
+            <div class="header__line"></div>
+            <input
+              placeholder="Search"
+              class="header__input active"
+              type="text"
+            />
+          </div>
+          <div class="header__container-block-2">
+            <nav class="header__nav">
+              <a href="#" class="header__nav-text">Trade</a>
+              <a href="#" class="header__nav-text">P2P</a>
+              <a href="#" class="header__nav-text">Mining</a>
+              <a href="#" class="header__nav-text">Academy</a>
+            </nav>
+            <div class="header__line"></div>
+            <div class="header__button__container">
+              <button class="button button-gray">Register</button>
+              <button class="button button-blue">Log in</button>
+            </div>
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title__line"></div>
+    </header>
+    <main class="main">
+      <section class="title">
+        <img src="./assets/decor/Group 11.svg" alt="" class="title__decor-3">
+        <img src="./assets/decor/decor-2.svg" alt="" class="title__decor-4">
+        <div class="title__decor-2"></div>
+        <div class="container">
+          <div class="title__container">
+            <div class="title__decor"></div>
+            <div class="title__block-1">
+              <div class="title__block-1-logo">
+                <img src="./assets/logo2.svg" alt="" />
+              </div>
+              <h1 class="title__block-1-title">
+                Buy, trade and store cryptocurrencies
+              </h1>
+              <div class="title__block-1-form-container">
+                <form action="#" method="get" class="title__block-1-form">
+                  <input
+                    placeholder="Example@gmail.com"
+                    class="title__block-1-input"
+                    type="email"
+                  />
+                  <button
+                    type="submit"
+                    id="Button-title-block-1"
+                    class="button button-blue"
+                  >
+                    Sign in
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="title__block-2">
+              <div class="title__block-2-chart">
+                <canvas id="myChart" width="640px" height="283px"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="title__line-2"></div>
+      </section>
+      <section class="crypto">
+        <div class="container">
+          <table class="crypto__block">
+            <thead class="crypto__block-title">
+              <tr class="crypto__block-title-container">
+                <th id="crypto__block-title-assets" class="crypto__block-title">
+                  Asset
+                </th>
+                <th class="crypto__block-title">Price</th>
+                <th class="crypto__block-title">Change</th>
+                <th class="crypto__block-title">Volume</th>
+                <th
+                  id="crypto__block-title-lst"
+                  class="crypto__block-title"
+                ></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-container"
+                >
+                  <img src="./assets/icon/bitcoin.svg" alt="" />
+                  <p class="crypto__block-coin-text">
+                    Bitcoin
+                    <span class="crypto__block-coin-text-span">BTC</span>
+                  </p>
+                </td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-price"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-change"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-volume"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-button-container"
+                >
+                  <button class="crypto__block-coin-button">Trade</button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-container"
+                >
+                  <img src="./assets/icon/bitcoin.svg" alt="" />
+                  <p class="crypto__block-coin-text">
+                    Bitcoin
+                    <span class="crypto__block-coin-text-span">BTC</span>
+                  </p>
+                </td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-price"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-change"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-volume"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-button-container"
+                >
+                  <button class="crypto__block-coin-button">Trade</button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-container"
+                >
+                  <img src="./assets/icon/bitcoin.svg" alt="" />
+                  <p class="crypto__block-coin-text">
+                    Bitcoin
+                    <span class="crypto__block-coin-text-span">BTC</span>
+                  </p>
+                </td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-price"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-change"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-volume"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-button-container"
+                >
+                  <button class="crypto__block-coin-button">Trade</button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-container"
+                >
+                  <img src="./assets/icon/bitcoin.svg" alt="" />
+                  <p class="crypto__block-coin-text">
+                    Bitcoin
+                    <span class="crypto__block-coin-text-span">BTC</span>
+                  </p>
+                </td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-price"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-change"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-volume"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-button-container"
+                >
+                  <button class="crypto__block-coin-button">Trade</button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-container"
+                >
+                  <img src="./assets/icon/bitcoin.svg" alt="" />
+                  <p class="crypto__block-coin-text">
+                    Bitcoin
+                    <span class="crypto__block-coin-text-span">BTC</span>
+                  </p>
+                </td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-price"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-change"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-text-volume"
+                ></td>
+                <td
+                  id="crypto-block-body-text"
+                  class="crypto__block-coin-button-container"
+                >
+                  <button class="crypto__block-coin-button">Trade</button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td class="crypto__block-coin-text-container">
+                  <img src="./assets/icon/bitcoin.svg" alt="" />
+                  <p class="crypto__block-coin-text">
+                    Bitcoin
+                    <span class="crypto__block-coin-text-span">BTC</span>
+                  </p>
+                </td>
+                <td class="crypto__block-coin-text-price"></td>
+                <td class="crypto__block-coin-text-change"></td>
+                <td class="crypto__block-coin-text-volume"></td>
+                <td class="crypto__block-coin-button-container">
+                  <button class="crypto__block-coin-button">Trade</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="crypto__button-assets">All assets</button>
+        </div>
+        <div class="crypto__line"></div>
+      </section>
+      <section class="bitles">
+        <div class="bitles-decor-2"></div>
+        <div class="container">
+          <div class="bitles-container">
+            <div class="bitles__block-1">
+              <h2 class="bitles__block-1-title">
+                Bitles is your reliable guide in the world of digital assets
+              </h2>
+              <h3 class="bitles__block-1-subtitle">
+                The Bitles app is a comprehensive solution for trading digital
+                assets. Buy and sell cryptocurrencies quickly and openly,
+                comfortably and safely from anywhere in the world.
+              </h3>
+            </div>
+            <div class="bitles__block-2">
+              <div class="bitles-decor"></div>
+              <img
+                class="bitles__block-2-img"
+                src="./assets/crypto/binance.svg"
+                alt="binance"
+              />
+              <img
+                class="bitles__block-2-img"
+                src="./assets/crypto/Bitfinex.svg"
+                alt="bitfinex"
+              />
+              <img
+                class="bitles__block-2-img"
+                src="./assets/crypto/Bybit.svg"
+                alt="bybit"
+              />
+              <img
+                class="bitles__block-2-img"
+                src="./assets/crypto/coinbase.svg"
+                alt="coinbase"
+              />
+              <img
+                class="bitles__block-2-img"
+                src="./assets/crypto/cryptocom.svg"
+                alt="cryptocom"
+              />
+              <img
+                class="bitles__block-2-img"
+                src="./assets/crypto/kraken.svg"
+                alt="kraken"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bitles__line"></div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__container">
+            <div class="advantages__block">
+              <img src="./assets/icon/card.svg" alt="" />
+              <h3 class="advantages__block__title">
+                User Safe Asset Fund (SAFU)world.
+              </h3>
+              <h5 class="advantages__block__subtitle">
+                Bitlist holds 10% of all trading fees in a protected asset fund
+                to protect a portion of user funds.
+              </h5>
+            </div>
+            <div class="advantages__block">
+              <img src="./assets/icon/eye.svg" alt="" />
+              <h3 class="advantages__block__title">User Access Control</h3>
+              <h5 class="advantages__block__subtitle">
+                Personalized access control allows you to limit the devices and
+                addresses that can access your account.
+              </h5>
+            </div>
+            <div class="advantages__block">
+              <img src="./assets/icon/lock.svg" alt="" />
+              <h3 class="advantages__block__title">Improved data encryption</h3>
+              <h5 class="advantages__block__subtitle">
+                Your transaction data is encrypted - only you can access your
+                personal data.
+              </h5>
+            </div>
+            <div class="advantages__block">
+              <img src="./assets/icon/chat.svg" alt="" />
+              <h3 class="advantages__block__title">Support 24/7</h3>
+              <h5 class="advantages__block__subtitle">
+                24/7 real-time support is always ready to help you.
+              </h5>
+            </div>
+            <div class="advantages__block">
+              <img src="./assets/icon/ra.svg" alt="" />
+              <h3 class="advantages__block__title">
+                Fast replineshments and withdraws
+              </h3>
+              <h5 class="advantages__block__subtitle">
+                Transfer funds to and from your accounts quickly and easily.
+              </h5>
+            </div>
+            <div class="advantages__block">
+              <img src="./assets/icon/exchange.svg" alt="" />
+              <h3 class="advantages__block__title">Comfortable P2P platform</h3>
+              <h5 class="advantages__block__subtitle">
+                Top up your account in any convenient way on the P2P platform at
+                favorable rates.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="advantages__line"></div>
+      </section>
+      <section class="register">
+        <div class="container">
+          <div class="register__block">
+            <div class="register__decor__container">
+              <div class="register__decor"></div>
+            </div>
+            <div class="register__decor-2"></div>
+            <div class="register__decor-3"></div>
+            <h2 class="register__block__title">
+              Register your account now and start to trade
+            </h2>
+            <form action="#" method="get">
+              <input
+                placeholder="Example@gmail.com"
+                class="register__form-input"
+                type="email"
+              />
+              <button
+                type="submit"
+                id="Button-title-block-1"
+                class="button button-blue"
+              >
+                Sign in
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="register__line"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__block-1">
+            <a href="#header">
+              <img
+                class="footer__block__logo"
+                src="./assets/logo3.svg"
+                alt=""
+              />
+            </a>
+            <div class="footer__block-socials">
+              <a href="#">
+                <img
+                  class="footer__block-socials-img"
+                  src="./assets/socials/facebook.svg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer__block-socials-img"
+                  src="./assets/socials/X.svg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="footer__block-socials-img"
+                  src="./assets/socials/Telegram.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="footer__button__container">
+              <button id="footer__button" class="button button-gray">
+                Register
+              </button>
+              <button id="footer__button" class="button button-blue">
+                Log in
+              </button>
+            </div>
+          </div>
+          <div class="footer__block-2">
+            <div class="footer__subblock">
+              <a class="footer__subblock-text" href="#">
+                <h6>Trade</h6>
+              </a>
+              <a class="footer__subblock-text" href="#">
+                <h6>P2P</h6>
+              </a>
+              <a class="footer__subblock-text" href="#">
+                <h6>Partners</h6>
+              </a>
+              <a class="footer__subblock-text" href="#">
+                <h6>Mining</h6>
+              </a>
+              <a class="footer__subblock-text" href="#">
+                <h6>Academy</h6>
+              </a>
+            </div>
+            <div class="footer__subblock">
+              <a class="footer__subblock-text" href="#">
+                <h6>Privacy policy</h6>
+              </a>
+              <a class="footer__subblock-text" href="#">
+                <h6>Terms of rules</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__text">Bitlist© All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <script src="./Js/index.js" ></script>
+    <script src="./Js/burger.js"></script>
+    <script src="./Js/btn.js"></script>
+    <script src="./Js/scroll.js"></script>
+    <script src="./Js/table.js" ></script>
+  </body>
+</html>
